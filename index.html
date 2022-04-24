@@ -1,100 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Sarah Maria" contact="She Codes">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sarah Maria Portfolio Website</title>
-    
 
-    
+
+
 </head>
+
 <body>
     <header>
+
+        <a href="index.html" class="navbar-brand">Sarah Maria</a>
+
         <nav>
-            <a class="navbar-brand">Sarah Maria</a>
-            <a href="about.html" id="hover">About</a>
-            <a href="index.html" id="hover">Work</a>
-            <a href="index.html" id="hover">Contact</a>
-            <a href="index.html" id="hover">Github<img src=""></a>
+            <ul class="nav_links">
+                <li><a href="about.html">About</a></li>
+                <li> <a href="#Work">Work</a></li>
+                <li> <a href="#Contact">Contact</a></li>
+                <li><a href="https://github.com/sarahmaria398" target="_blank" class="fa fa-github"
+                        style="font-size:45px;color:#777">
+                    </a></li>
+
+            </ul>
         </nav>
-        
+
     </header>
 
 
     <main>
         <section>
-            <div id="banner-image">
-                <h1>Hi,I'm Sarah</h1>
-            
-                <!-- <p>lorem ipsum blah</p> -->
+            <div class="hero-image">
+                <h1 class="its">It's</h1>
+                <h1 class="sarah">Sarah</h1>
+                <div id="welcome-banner">
+                    <h2> Welcome </h2>
+                    <div class="dot"></div>
+                    <h2> Web Design</h2>
+                    <div class="dot"></div>
+                    <h2> Portfolio </h2>
+                </div>
             </div>
         </section>
-    
+
+
+        <a id="Work"></a>
         <section>
-            <h1>Some Section</h1>
-            <div class="content-section container">
-                <div class="item">
-                    <img src="images/Sarah-blog.PNG" alt="Sarah Image"> 
+            <h1 class="section-title">The Works</h1>
+            <div class="content-container">
+                <div>
+                    <img src="images/Sarah-blog.PNG" alt="Sarah Image">
                 </div>
 
-                <div class="item">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div id="item-2">
+                    <h4>Sarah Maria Collective</h4>
+                    <p>"My own blog website, created during the time I pursued an internship with Brisbane-based company
+                        Two Red Kites, where my Ruby on Rails journey began. I used a Bootstrap template and edited it
+                        to suit my needs, publishing blog posts as I went along my learning journey. This website was
+                        not published live however, so you will not be able to find it on the web!
+                        "</p>
+
                 </div>
-                
-                <div class="item">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div> 
-                <div class="item">
+
+                <div id="item-3">
+                    <h4>eCentral Websites and Marketing:</h4>
+                    <p>"I worked for Brisbane-based websites and marketing business, eCentral, and was involved in a
+                        multitude
+                        of tasks including, website designing and developing, market analysis and strategizing, ebook
+                        publishing, CMS management, graphic design and more. I played a key role in market analysis and
+                        the
+                        implementation of such strategies by use of optimized SEO and websites to spec."
+                    </p>
+                </div>
+                <div>
                     <img src="images/Ecentral.PNG" alt="Sarah Image">
                 </div>
-            
-                
+
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/07rBLHvzHNk">
+                </iframe>
+
+                <div id="item-6">
+                    <h4>She Codes</h4>
+                    <p>"This project here! The website is the first project due as part of the 2022 Plus Program, and is
+                        designed to be a showcase for what we have learnt with HTML & CSS. Please click the image to
+                        view the time lapse of me creating this website! Or visit Youtube directly:"
+                        https://youtu.be/07rBLHvzHNk"
+                        "</p>
+                </div>
             </div>
-
         </section>
 
         <section>
-            <h1>Maybe a Les Brown quote</h1>
+            <div class="skills">
+                <h1 class="section-title">Technologies</h1>
+                <div class="skills-container">
+                    <h3> HTML & CSS </h3>
+                    <h3> Python</h3>
+                    <h3> Django </h3>
+                    <h3> React </h3>
+                    <h3> Github & Git </h3>
+                </div>
+
+                <div class="social">
+
+                    <ul class="social">
+                        <li><a href="https://github.com/sarahmaria398" target="_blank"><i class="fa fa-github"
+                                    style="font-size:55px;color:rgb(251, 251, 251)"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/sarah-h-davis-a9581b120/" target="_blank"><i
+                                    class="fa fa-linkedin fa-fw"
+                                    style="font-size:55px;color:rgb(251, 251, 251)"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </section>
-        
+
 
         <section>
-            <h1>Contact Section</h1>
+            <a id="Contact"></a>
+            <h1 class="section-title">Connect</h1>
+            <h1 class="sub-section-title">Reach out and let's discuss your next project!</h1>
 
             <form action="https://formspree.io/f/xzbojbvy" method="post">
                 <div class="form-item">
-                <label for = "name">Name</label>
-                <input type = "text" id = "name" name = "name">
-    
-            </div>
-    
-                <div class = "form-item">
-                    <label for = "mail">Email</label>
-                    <input type = "email" id = "mail" name = "email">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
                 </div>
-    
-                <div class = "form-item">
-                    <label for = "message"> Message</label>
-                    <textarea id = "message" name = "message" ></textarea>
+
+                <div class="form-item">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="email">
                 </div>
-    
-                <div class = "form-item">
-                    <button type = "submit">Send</button>
+
+                <div class="form-item">
+                    <label for="message"> Message</label>
+                    <textarea id="message" name="message"></textarea>
                 </div>
-                
-    
+
+                <div class="form-item">
+                    <button type="submit">Send</button>
+                </div>
+
+
             </form>
         </section>
 
-</main>
+    </main>
 
 
     <footer>
-        <h1>Aaannnnd a Footer</h1>
+        <div class="footer-image">
+            <div class="social">
+
+                <ul class="social">
+                    <li><a href="index.html"><i class="fa fa-twitter fa-fw"
+                                style="font-size:60px;color:rgb(251, 251, 251)"></i></a></li>
+                    <li><a href="index.html"><i class="fa fa-facebook fa-fw"
+                                style="font-size:60px;color:rgb(251, 251, 251)"></i></a></li>
+                    <li><a href="index.html"><i class="fa fa-google-plus fa-fw"
+                                style="font-size:60px;color:rgb(251, 251, 251)"></i></a></li>
+                    <li><a href="https://github.com/sarahmaria398" target="_blank"><i class="fa fa-github"
+                                style="font-size:60px;color:rgb(251, 251, 251)"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/sarah-h-davis-a9581b120/" target="_blank"><i
+                                class="fa fa-linkedin fa-fw" style="font-size:60px;color:rgb(251, 251, 251)"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>&copy;2022 Sarah Maria</p>
+            </div>
+        </div>
     </footer>
-    
 </body>
+
 </html>
