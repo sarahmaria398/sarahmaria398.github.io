@@ -32,6 +32,29 @@ header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.navbar-brand {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0;
+}
+
+
+.nav_links li a:hover {
+    color: rgb(128, 143, 201);
+}
+
 .hero-image {
     background-image: url(https://images.unsplash.com/photo-1508857236601-452e98fb122a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80);
     height: 750px;
@@ -44,7 +67,6 @@ header {
     z-index: 50;
     width: 100%;
 }
-
 
 .hero-image:before {
     content: '';
@@ -84,30 +106,6 @@ header {
     border: 3px solid white;
 }
 
-.navbar-brand {
-    cursor: pointer;
-    font-size: 3rem;
-}
-
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0;
-}
-
-
-.nav_links li a:hover {
-    color: rgb(128, 143, 201);
-}
-
-
 .hero-image h1 {
     padding-top: 0rem;
     padding-right: 1rem;
@@ -137,32 +135,6 @@ header {
 
 .about-image h2 {
     font-family: 'League Spartan', sans-serif;
-}
-
-.line {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    height: 1rem;
-    color: white;
-    width: 20rem;
-}
-
-.line-2 {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    height: 0.18rem;
-    background-color: rgba(109, 106, 106, 0.568);
-    width: 60rem;
 }
 
 .its {
@@ -201,12 +173,6 @@ header {
     font-size: 9rem;
 }
 
-
-.main-div {
-    background-color: rgb(241, 189, 189);
-}
-
-
 #welcome-banner {
     width: 100%;
     display: flex;
@@ -222,7 +188,6 @@ header {
     line-height: 3rem;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px #777;
-
 }
 
 .hero-image p {
@@ -339,14 +304,12 @@ header {
     vertical-align: bottom;
 }
 
-
 .skills {
     height: 32rem;
     background-image: url(https://images.unsplash.com/photo-1508857236601-452e98fb122a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80);
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
 }
-
 
 .skills-container {
     margin: 0em 2em 0em 2em;
@@ -355,7 +318,6 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
 
 .skills h3 {
     font-size: 2.5rem;
@@ -414,8 +376,6 @@ form {
 .form-item button {
     width: 100px;
 }
-
-
 
 .footer-image {
     background-image: url(https://images.unsplash.com/photo-1508857236601-452e98fb122a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2112&q=80);
@@ -480,7 +440,7 @@ footer p {
 #profile-picture {
     width: 22rem;
     height: auto;
-    padding-top: 1rem;
+    padding-top: 0rem;
     margin-bottom: 5%;
     position: relative;
     background-color: white;
@@ -505,91 +465,278 @@ footer p {
 }
 
 #lesbrown {
-    background-color: aliceblue;
+    background-color: #559aaf46;
     text-align: center;
     padding: 2rem;
+    font-size: 1.4rem;
 }
 
 
-
-@media (max-width: 400px) {
-    .its {
-        /* position: absolute; */
-        font-size: 1rem;
+@media (max-width: 1490px) {
+    .content-container {
+        margin: 2em 6em 0em 6em;
     }
 
-    .sarah {
-        font-size: 1rem;
-    }
-}
-
-
-
-@media (max-width: 1000px) {
-    .its {
-        /* position: absolute; */
-        top: 0rem;
-        left: 0rem;
-        font-size: 9rem;
-        margin-top: 10rem;
-        margin-left: 6rem;
-    }
-
-    .sarah {
-        top: 0rem;
-        left: 0rem;
-        font-size: 8rem;
-
-    }
-
-    #welcome-banner {
-        width: 100%;
+    .about-section {
+        margin: 2em 0em 0em 0em;
         display: flex;
-        /* justify-content: space-evenly; */
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        /* background-color: red; */
-        position: absolute;
-        /* top: calc(100% - 100px); */
-        /* background-color: #d5e7eb6b; */
-        /* font-family: 'Satisfy', cursive; */
+        flex-direction: column;
+    }
+
+    #about-me {
+        width: 80%;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .its {
+        top: 0rem;
+        left: 14rem;
+        font-size: 13rem;
+    }
+
+    .sarah {
+        top: 6rem;
+        left: 14rem;
+        font-size: 15rem;
+    }
+
+    #welcome-banner h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero-image {
+        height: 600px;
+    }
+
+}
+
+
+@media (max-width: 1250px) {
+    .its-about {
+        top: 0rem;
+        left: 12rem;
+        font-size: 5rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 26rem;
+        font-size: 7rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .its {
+        top: -2rem;
+        left: 9rem;
+        font-size: 10rem;
+    }
+
+    .sarah {
+        top: 5rem;
+        left: 11rem;
+        font-size: 11rem;
     }
 
     #welcome-banner h2 {
         font-size: 2.5rem;
         line-height: 0rem;
+    }
 
+    .hero-image {
+        height: 500px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #profile-picture {
+        width: 20rem;
+        height: auto;
     }
 }
 
-@media (max-width: 1300px) {
-    .its {
-        /* position: absolute; */
+
+@media (max-width: 850px) {
+    .content-container {
+        margin: 2em 2em 0em 2em;
+    }
+
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .its-about {
         top: 0rem;
-        left: 13rem;
-        font-size: 13rem;
-        margin-top: 10rem;
-        margin-left: 6rem;
+        left: 5rem;
+        font-size: 4rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 17rem;
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .its {
+        top: -2rem;
+        left: 7rem;
+        font-size: 7rem;
     }
 
     .sarah {
         top: 6rem;
-        left: 13rem;
-        font-size: 15rem;
+        left: 9.5rem;
+        font-size: 9rem;
+    }
 
+    #welcome-banner {
+        flex-direction: column;
+        /* justify-content: space-evenly; */
     }
 
     #welcome-banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    #lesbrown {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .its-about {
+        top: 0rem;
+        left: 3.5rem;
+        font-size: 4rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 12rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .its {
+        top: -3rem;
+        left: 3rem;
+        font-size: 5.5rem;
+    }
+
+    .sarah {
+        top: 6rem;
+        left: 6rem;
+        font-size: 7.5rem;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .skills h3 {
+        font-size: 2rem;
+    }
+
+    .skills {
+        height: 28rem;
+    }
+
+    #profile-picture {
+        width: 15rem;
+        height: auto;
+    }
+
+    .its-about {
+        top: -1rem;
+        left: -3rem;
+        font-size: 4rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 5rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .its {
+        top: -3rem;
+        left: 1.5rem;
+        font-size: 5.5rem;
+    }
+
+    .sarah {
+        top: 5rem;
+        left: 3rem;
+        font-size: 7.5rem;
+    }
+
+    .section-title {
         font-size: 3rem;
-        line-height: 0rem;
-
     }
 
-    .content-container img:hover {
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        width: 19rem;
-        height: 13rem;
+    .its-about {
+        top: -1rem;
+        left: -3rem;
+        font-size: 4rem;
     }
 
-    /* TODO:add this to each media queries, the above. so no hover effect */
+    .sarah-about {
+        top: 1rem;
+        left: 5rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .its-about {
+        top: -1rem;
+        left: -3rem;
+        font-size: 3rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 4rem;
+        font-size: 4rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+
+    header {
+        padding: 10px 4%;
+    }
+
+    .about-image {
+        height: 200px;
+    }
 }
