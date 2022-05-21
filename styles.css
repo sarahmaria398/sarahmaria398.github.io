@@ -32,6 +32,11 @@ header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+#github-favicon {
+    font-size: 36px;
+    color: #777;
+}
+
 .navbar-brand {
     cursor: pointer;
     font-size: 3rem;
@@ -214,28 +219,26 @@ header {
 }
 
 .content-container {
-    margin: 2em 16em 0em 16em;
+    margin: 2em 2em 2em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.line1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 2rem;
 }
 
-#item-1 {
-    width: 20rem;
-    height: 14rem;
-    padding-top: 1rem;
-    margin-bottom: 5%;
-    position: relative;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
 #item-2 {
     width: 40rem;
-    padding: 1rem;
     font-size: 1.35rem;
-    margin-bottom: 5%;
+    padding: 1rem;
+    padding-bottom: 0rem;
     position: relative;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -243,27 +246,8 @@ header {
 
 #item-3 {
     width: 40rem;
-    padding-bottom: 0rem;
     padding: 1rem;
     font-size: 1.35rem;
-    margin-bottom: 5%;
-    position: relative;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-#item-4 {
-    width: 20rem;
-    margin-bottom: 5%;
-    position: relative;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-#item-5 {
-    width: 20rem;
-    padding-bottom: 0rem;
-    margin-bottom: 5%;
     position: relative;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -271,10 +255,8 @@ header {
 
 #item-6 {
     width: 40rem;
-    padding-bottom: 0rem;
     padding: 1rem;
     font-size: 1.35rem;
-    margin-bottom: 5%;
     position: relative;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -288,20 +270,12 @@ header {
     border: solid rgb(110, 109, 109, 0.5) 1px;
     width: 19rem;
     height: 13rem;
-    margin-bottom: 13px;
 }
 
 .content-container img:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 20rem;
     height: 13rem;
-}
-
-.content-section img {
-    max-height: 20rem;
-    max-width: 20rem;
-    object-fit: cover;
-    vertical-align: bottom;
 }
 
 .skills {
@@ -339,7 +313,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
 }
 
 .form-item label {
@@ -472,11 +446,59 @@ footer p {
 }
 
 
-@media (max-width: 1490px) {
-    .content-container {
-        margin: 2em 6em 0em 6em;
+.social li a {
+    font-size: 60px;
+    color: rgb(251, 251, 251);
+}
+
+@media (max-width: 2000px) {
+    .its {
+        left: 32rem;
+        margin-top: 10rem;
+        margin-left: 6rem;
     }
 
+    .sarah {
+        top: 2rem;
+        left: 30rem;
+    }
+
+    .its-about {
+        top: -0.5rem;
+        left: 38rem;
+    }
+
+    .sarah-about {
+        top: 0rem;
+        left: 50rem;
+    }
+}
+
+
+@media (max-width: 1800px) {
+    .its {
+        left: 18rem;
+        margin-top: 10rem;
+        margin-left: 6rem;
+    }
+
+    .sarah {
+        top: 2rem;
+        left: 14rem;
+    }
+
+    .its-about {
+        top: -0.5rem;
+        left: 30rem;
+    }
+
+    .sarah-about {
+        top: 0rem;
+        left: 42rem;
+    }
+}
+
+@media (max-width: 1490px) {
     .about-section {
         margin: 2em 0em 0em 0em;
         display: flex;
@@ -520,17 +542,39 @@ footer p {
 @media (max-width: 1250px) {
     .its-about {
         top: 0rem;
-        left: 12rem;
+        left: 19rem;
         font-size: 5rem;
     }
 
     .sarah-about {
         top: 1rem;
-        left: 26rem;
+        left: 30rem;
         font-size: 7rem;
+    }
+
+    .social li a {
+        font-size: 40px;
+    }
+
+    .copyright {
+        font-size: 1.3rem;
+    }
+
+    .footer-image {
+        height: 11rem;
     }
 }
 
+@media (max-width: 1060px) {
+    .content-container img {
+        margin: 1.5rem;
+    }
+
+    .content-container iframe {
+        margin: 1.5rem;
+    }
+
+}
 
 @media (max-width: 950px) {
     .its {
@@ -562,21 +606,28 @@ footer p {
         width: 20rem;
         height: auto;
     }
-}
 
-
-@media (max-width: 850px) {
-    .content-container {
-        margin: 2em 2em 0em 2em;
+    .its-about {
+        top: 0rem;
+        left: 10rem;
+        font-size: 5rem;
     }
 
+    .sarah-about {
+        top: 1rem;
+        left: 20rem;
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 850px) {
     .section-title {
         font-size: 4rem;
     }
 
     .its-about {
         top: 0rem;
-        left: 5rem;
+        left: 8rem;
         font-size: 4rem;
     }
 
@@ -586,20 +637,49 @@ footer p {
         font-size: 6rem;
     }
 
+    #profile-picture {
+        width: 18rem;
+        height: auto;
+    }
+
+    #about-me {
+        width: 80%;
+        font-size: 1.6rem;
+    }
+
+    #profile-picture img {
+        border: solid rgb(110, 109, 109, 0.5) 1px;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 700px) {
     .its {
-        top: -2rem;
-        left: 7rem;
+        top: -4rem;
+        left: 5rem;
         font-size: 7rem;
     }
 
     .sarah {
-        top: 6rem;
-        left: 9.5rem;
+        top: 5rem;
+        left: 8rem;
         font-size: 9rem;
     }
+
+    .its-about {
+        top: 0rem;
+        left: 2rem;
+        font-size: 4rem;
+    }
+
+    .sarah-about {
+        top: 1rem;
+        left: 10.5rem;
+        font-size: 6rem;
+    }
+
 
     #welcome-banner {
         flex-direction: column;
@@ -610,8 +690,13 @@ footer p {
         font-size: 2.2rem;
     }
 
+
     .navbar-brand {
         font-size: 2.5rem;
+    }
+
+    #github-favicon {
+        font-size: 23px;
     }
 
     a {
@@ -621,32 +706,49 @@ footer p {
     #lesbrown {
         font-size: 1rem;
     }
-}
 
+    #item-2 {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+
+    #item-3 {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+
+    #item-6 {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+
+    .content-container img {
+        border: solid rgb(110, 109, 109, 0.5) 1px;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .content-container img:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 16rem;
+        height: 11rem;
+    }
+
+    .content-container iframe {
+        width: 15rem;
+        height: 10rem;
+    }
+}
 
 @media (max-width: 550px) {
-    .its-about {
-        top: 0rem;
-        left: 3.5rem;
-        font-size: 4rem;
-    }
-
-    .sarah-about {
-        top: 1rem;
-        left: 12rem;
-        font-size: 6rem;
-    }
-}
-
-@media (max-width: 500px) {
     .its {
-        top: -3rem;
+        top: -5rem;
         left: 3rem;
         font-size: 5.5rem;
     }
 
     .sarah {
-        top: 6rem;
+        top: 4rem;
         left: 6rem;
         font-size: 7.5rem;
     }
@@ -669,15 +771,15 @@ footer p {
     }
 
     .its-about {
-        top: -1rem;
-        left: -3rem;
-        font-size: 4rem;
+        top: 0rem;
+        left: -1rem;
+        font-size: 3.5rem;
     }
 
     .sarah-about {
         top: 1rem;
-        left: 5rem;
-        font-size: 6rem;
+        left: 7rem;
+        font-size: 5.5rem;
     }
 }
 
@@ -709,6 +811,7 @@ footer p {
         left: 5rem;
         font-size: 6rem;
     }
+
 }
 
 @media (max-width: 280px) {
