@@ -195,6 +195,10 @@ header {
     text-shadow: 2px 2px #777;
 }
 
+.enlargen {
+    font-size: 8rem;
+}
+
 .hero-image p {
     color: white;
     display: flex;
