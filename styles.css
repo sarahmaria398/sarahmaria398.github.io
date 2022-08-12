@@ -362,6 +362,7 @@ form {
     height: 12rem;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: left;
